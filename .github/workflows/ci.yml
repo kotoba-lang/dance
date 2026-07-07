@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: git clone --depth 1 https://github.com/kotoba-lang/org-vrmc-vrm.git ../org-vrmc-vrm
+      - run: git clone --depth 1 https://github.com/kotoba-lang/org-khronos-glb.git ../org-khronos-glb
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
