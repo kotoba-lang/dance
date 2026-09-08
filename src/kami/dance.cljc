@@ -20,7 +20,7 @@
    VRM mesh replaces it once the web executor consumes render-IR `:meshes`. The moves are
    faithful ports of `kami_live::performer::DanceMove`, so a stage replays identically on
    web and native given (bpm, t0)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; --- trig (cross-platform) ---------------------------------------------------
 (def ^:const TAU 6.283185307179586)
